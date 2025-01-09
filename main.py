@@ -8,5 +8,4 @@ end_date = '2025-01-01'
 aapl = yf.Ticker(symbol)
 stock_data = aapl.history(start=start_date, end=end_date)
 
-
 mpf.plot(stock_data, type='candle', style='yahoo', title=f'{symbol} Candlestick chart')
